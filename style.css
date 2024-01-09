@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
 .overall{
     display: flex;
     flex-direction:column;
@@ -6,11 +14,12 @@
     display: flex;
     background: #1f2937;
     flex-direction:column;
+    height: 400px;
 }
 .top{
     display:flex;
-    justify-content: space-around;
-    align-items: center;
+    margin-top: 18px;
+    justify-content: space-evenly;
 }
 a {
     /* this removes the line under our links */
@@ -22,32 +31,121 @@ a {
     list-style-type: none;
     display:flex;
     gap: 1.5em;
+    width:434px;
+    justify-content: flex-end;
 }
 
 .logo{
     font-size: 24px;
     color: #f9faf8;
     font-weight: 900;
-    padding-right:4px;
+    width: 500px;
 }
 
 .below-logo{
     display:flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     align-items: center;
-    padding-right: 48px;
+    flex:1;
 }
-.left{
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-}
+
 .text{
     font-size: 18px;
     color: #e5e7eb;
+    width: 500px;
 }
 .hero-text{
-    font-size: 48px;
-    font-weight: 900;
+    font-size: 24px;
+    font-weight: 900px;
     color:#f9faf8;
+    align-self: flex-start;
+    width:400px
+}
+button{
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    background: #3882f6;
+    padding: 8px 16px;
+    color: white;
+    border: 2px solid white;
+}
+
+.section2{
+    display:flex;
+    flex-direction: column;
+    margin-top: 3em;
+    gap: 60px;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    font-size: 36px;
+    font-weight: 900;
+    color:#1f2937;
+    align-self: center;
+}
+.container{
+    display:flex;
+    gap: 50px;
+}
+.squares{
+    max-width: 168px;
+    text-align: center;
+    color:#1F2937;
+}
+
+.section3{
+    background-color: #e5e7eb;
+    display:flex;
+    flex-direction: column;
+    margin-top: 80px;
+    align-items:center ;
+    padding:100px 0px;
+}
+.container2{
+    display:flex;
+    flex-direction:column;
+
+}
+.inspirational{
+    font-size: 36px;
+    color:#1F2937;
+    display:flex;
+    width: 900px;
+    font-style: italic;
+}
+.author{
+    font-weight: 900;
+    align-self: flex-end;
+}
+.container3{
+    display:flex;
+    margin-top: 80px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+.section4{
+    display:flex;
+    background-color:#3882F6;
+    width:868px;
+    height: 145px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 8px;
+}
+.call{
+    color:white;
+    font-weight:900;
+    font-size:24px;
+}
+.footer{
+    background-color:#1F2937;
+    display:flex;
+    height: 80px;
+    color:white;
+    justify-content: center;
+    align-items:center;
 }
